@@ -1,0 +1,166 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: honeydew;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 44px;
+  font-weight: bolder;
+  font-family: "Pacifico", cursive;
+  color: crimson;
+}
+
+.container {
+  width: 600px;
+  height: 600px;
+  max-width: 98%;
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.331);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: #393939;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 600;
+  color: #fff;
+  font-family: cursive;
+  user-select: none;
+}
+
+.grid-item:hover {
+  transform: scale(1.02);
+  background-color: #434343;
+}
+
+.message {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tag {
+  color: red;
+  font-weight: 700;
+  background-color: #bab8b8;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+.draw {
+  background-color: #bab8b8;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: red;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.btn {
+  padding: 14px 20px;
+  font-size: 25px;
+  background-color: #5252ec;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.flex {
+  margin-top: 25px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.387);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+@media (max-width: 740px) {
+  .title {
+    font-size: 33px;
+  }
+
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .flex {
+    width: 400px;
+  }
+
+  .message {
+    font-size: 22px;
+  }
+
+  .grid-item {
+    font-size: 50px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .flex {
+    width: 350px;
+    max-width: 97%;
+  }
+
+  .message {
+    font-size: 18px;
+  }
+
+  .grid-item {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .draw {
+    padding: 4px 10px;
+  }
+
+  .btn:hover {
+    transform: scale(1);
+  }
+
+  .grid-item:hover {
+    transform: scale(1);
+  }
+}
