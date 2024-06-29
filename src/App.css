@@ -1,19 +1,19 @@
 .app {
   width: 100%;
   height: 100%;
+  min-height: 786px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: honeydew;
 }
 
 .title {
   margin-bottom: 2rem;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: bolder;
-  font-family: "Pacifico", cursive;
-  color: crimson;
+  font-family: "Pacifico", Arial, Helvetica, sans-serif;
+  color: #4797ff;
 }
 
 .container {
@@ -22,7 +22,7 @@
   max-width: 98%;
   border-radius: 9px;
   padding: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.331);
+  box-shadow: 0 3px 10px #b0b0b0;
 }
 
 .grid {
@@ -33,50 +33,44 @@
 }
 
 .grid-item {
-  background-color: #393939;
+  box-shadow: 0 0 5px #b0b0b0;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 80px;
-  font-weight: 600;
-  color: #fff;
-  font-family: cursive;
+  font-size: 60px;
+  font-weight: 400;
+  font-family: sans-serif;
   user-select: none;
+  cursor: pointer;
 }
 
 .grid-item:hover {
   transform: scale(1.02);
-  background-color: #434343;
+  border: 2px solid #4797ff;
 }
 
 .message {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .tag {
-  color: red;
+  color: #4797ff;
   font-weight: 700;
-  background-color: #bab8b8;
-  padding: 3px 10px;
   border-radius: 5px;
 }
 
 .draw {
-  background-color: #bab8b8;
-  padding: 8px 20px;
-  border-radius: 5px;
-  color: red;
-  font-weight: 700;
-  font-size: 25px;
+  color: #c80303;
+  font-weight: 600;
 }
 
 .btn {
-  padding: 14px 20px;
-  font-size: 25px;
-  background-color: #5252ec;
+  padding: 7px 10px;
+  font-size: 18px;
+  background-color: #ff4747;
   outline: none;
   border: none;
   border-radius: 5px;
@@ -90,19 +84,19 @@
 }
 
 .flex {
-  margin-top: 25px;
+  margin-bottom: 25px;
   width: 600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.387);
-  padding: 10px 15px;
+  box-shadow: 0 0 5px #b0b0b0;
+  padding: 10px 20px;
   border-radius: 10px;
 }
 
 @media (max-width: 740px) {
   .title {
-    font-size: 33px;
+    font-size: 25px;
   }
 
   .container {
@@ -115,16 +109,15 @@
   }
 
   .message {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .grid-item {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .btn {
-    padding: 10px 20px;
-    font-size: 18px;
+    font-size: 12px;
   }
 }
 
@@ -140,7 +133,7 @@
   }
 
   .message {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .grid-item {
@@ -148,8 +141,7 @@
   }
 
   .btn {
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .draw {

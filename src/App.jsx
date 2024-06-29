@@ -47,23 +47,6 @@ function App() {
     <>
       <div className="app">
         <h1 className="title">TIC TAC TOE</h1>
-        <div className="container grid">
-          {cells.map((elem, index) => {
-            return (
-              <Cell
-                key={index}
-                elem={elem}
-                id={index}
-                player={player}
-                setPlayer={setPlayer}
-                cells={cells}
-                setCells={setCells}
-                gameOver={gameOver}
-                setClicks={setClicks}
-              />
-            );
-          })}
-        </div>
         <div className="flex">
           {gameOver === false ? (
             clicks === 9 ? (
@@ -82,6 +65,23 @@ function App() {
           <button className="btn" onClick={handleReset}>
             RESET
           </button>
+        </div>
+        <div className="container grid">
+          {cells.map((elem, index) => {
+            return (
+              <Cell
+                key={index}
+                elem={elem}
+                id={index}
+                player={player}
+                setPlayer={setPlayer}
+                cells={cells}
+                setCells={setCells}
+                gameOver={gameOver}
+                setClicks={setClicks}
+              />
+            );
+          })}
         </div>
       </div>
     </>
